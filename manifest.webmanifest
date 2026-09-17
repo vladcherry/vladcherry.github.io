@@ -1,0 +1,27 @@
+{
+  "name": "Vlad's Apps",
+  "short_name": "Apps",
+  "description": "A small store of installable web apps: weather, transport, finance, health and learning.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#ffffff",
+  "theme_color": "#14161b",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["utilities", "productivity"],
+  "icons": [
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Bus Radar", "url": "/bus-radar/", "icons": [{ "src": "icons/apps/bus-radar.png", "sizes": "192x192", "type": "image/png" }] },
+    { "name": "Barogram", "url": "/barogram/", "icons": [{ "src": "icons/apps/barogram.png", "sizes": "192x192", "type": "image/png" }] },
+    { "name": "FitBalance", "url": "/fit-balance/", "icons": [{ "src": "icons/apps/fit-balance.png", "sizes": "192x192", "type": "image/png" }] },
+    { "name": "Smart Dog", "url": "/smart-dog/", "icons": [{ "src": "icons/apps/smart-dog.png", "sizes": "192x192", "type": "image/png" }] }
+  ]
+}

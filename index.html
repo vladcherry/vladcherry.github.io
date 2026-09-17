@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vlad's Apps — small web apps you can install</title>
+<meta name="description" content="A small store of installable web apps by Vlad Cherniavskyi: weather, transport, finance, health and learning. Every app runs in the browser and installs to the home screen.">
+<meta name="theme-color" content="#14161b" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="color-scheme" content="light dark">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Vlad's Apps">
+<meta property="og:description" content="A small store of installable web apps: weather, transport, finance, health and learning.">
+<meta property="og:url" content="https://vladcherry.github.io/">
+<meta property="og:image" content="https://vladcherry.github.io/icons/icon-512.png">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://vladcherry.github.io/">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="icon" href="icons/icon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#apps">Skip to apps</a>
+
+<header class="top">
+  <div class="wrap top__inner">
+    <div class="brand">
+      <img class="brand__icon" src="icons/icon.svg" width="44" height="44" alt="">
+      <div class="brand__text">
+        <span class="brand__name">Vlad&rsquo;s Apps</span>
+        <span class="brand__sub">Small web apps, installable, no store</span>
+      </div>
+    </div>
+    <div class="top__actions">
+      <button id="install" class="btn btn--primary" type="button" hidden>Install this store</button>
+      <button id="theme" class="btn btn--icon" type="button" aria-label="Switch colour theme" title="Switch colour theme">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z" fill="currentColor"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <h1>Everything I&rsquo;ve built, in one place.</h1>
+    <p>Eight small apps that run entirely in your browser. Most of them install to the home screen and keep working offline — no app store, no account, no tracking.</p>
+  </section>
+
+  <section class="controls" aria-label="Filter apps">
+    <div class="search">
+      <svg class="search__icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m16.5 16.5 4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input id="q" type="search" placeholder="Search apps" aria-label="Search apps" autocomplete="off">
+    </div>
+    <div id="chips" class="chips" role="group" aria-label="Categories"></div>
+  </section>
+
+  <section id="apps" aria-label="Apps">
+    <ul id="grid" class="grid"></ul>
+    <p id="empty" class="empty" hidden>Nothing matches that. <button type="button" class="linklike" id="reset">Show everything</button></p>
+  </section>
+
+  <section class="note">
+    <h2>How installing works</h2>
+    <div class="note__grid">
+      <div>
+        <h3>Android &amp; desktop Chrome</h3>
+        <p>Open an app, then use the install icon in the address bar, or the browser menu &rarr; <em>Install app</em>. It lands on your home screen or desktop like any other app.</p>
+      </div>
+      <div>
+        <h3>iPhone &amp; iPad</h3>
+        <p>Open an app in Safari, tap <em>Share</em>, then <em>Add to Home Screen</em>. Chrome and Firefox on iOS cannot do this — it has to be Safari.</p>
+      </div>
+      <div>
+        <h3>Why install from each app?</h3>
+        <p>A browser installs the page you are standing on, so every app is installed from its own page. This store cannot install them for you — the <em>Install</em> button here installs the store itself, as a launcher.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <p>Built by <a href="https://github.com/vladcherry">Vlad Cherniavskyi</a>. Source of every app is on GitHub.</p>
+    <p id="offline-note" class="foot__meta">Works offline once visited.</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
