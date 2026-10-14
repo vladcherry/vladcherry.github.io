@@ -8,7 +8,7 @@
  * out of the way of everything else.
  */
 
-const VERSION = 'store-v1';
+const VERSION = 'store-v2';
 
 const SHELL = [
   '/',
@@ -23,6 +23,8 @@ const SHELL = [
   '/icons/icon-maskable-512.png',
   '/icons/apple-touch-icon.png',
   '/icons/apps/bus-radar.png',
+  '/icons/apps/beer-ispindel.png',
+  '/icons/apps/mdzy.png',
   '/icons/apps/barogram.png',
   '/icons/apps/fit-balance.png',
   '/icons/apps/cesta.png',

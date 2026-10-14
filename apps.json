@@ -8,6 +8,7 @@
       "lang": "EN",
       "accent": "#e05252",
       "icon": "icons/apps/bus-radar.png",
+      "kind": "web",
       "url": "/bus-radar/",
       "repo": "https://github.com/vladcherry/bus-radar",
       "pwa": true
@@ -20,6 +21,7 @@
       "lang": "EN",
       "accent": "#5c7cfa",
       "icon": "icons/apps/barogram.png",
+      "kind": "web",
       "url": "/barogram/",
       "repo": "https://github.com/vladcherry/barogram",
       "pwa": true
@@ -32,8 +34,39 @@
       "lang": "EN",
       "accent": "#e0484d",
       "icon": "icons/apps/fit-balance.png",
+      "kind": "web",
       "url": "/fit-balance/",
       "repo": "https://github.com/vladcherry/fit-balance",
+      "pwa": true
+    },
+    {
+      "slug": "mdzy",
+      "name": "mdzy",
+      "tagline": "A Markdown and text viewer for Windows: one 234 KB exe, no dependencies, documents open in under 100 ms.",
+      "category": "Tools",
+      "lang": "EN",
+      "accent": "#5763ef",
+      "icon": "icons/apps/mdzy.png",
+      "kind": "desktop",
+      "platform": "Windows",
+      "version": "1.1.0",
+      "size": "234 KB",
+      "url": "https://github.com/vladcherry/mdzy/releases/latest/download/mdzy.exe",
+      "release": "https://github.com/vladcherry/mdzy/releases/latest",
+      "repo": "https://github.com/vladcherry/mdzy",
+      "pwa": false
+    },
+    {
+      "slug": "beer-ispindel",
+      "name": "Брожение",
+      "tagline": "Gravity, temperature and battery from an iSpindel hydrometer while the beer ferments, charted live.",
+      "category": "Brewing",
+      "lang": "RU",
+      "accent": "#c8851a",
+      "icon": "icons/apps/beer-ispindel.png",
+      "kind": "web",
+      "url": "/beer-ispindel/",
+      "repo": "https://github.com/vladcherry/beer-ispindel",
       "pwa": true
     },
     {
@@ -44,6 +77,7 @@
       "lang": "EN",
       "accent": "#3f9e77",
       "icon": "icons/apps/cesta.png",
+      "kind": "web",
       "url": "/cesta/",
       "repo": "https://github.com/vladcherry/cesta",
       "pwa": true
@@ -56,6 +90,7 @@
       "lang": "RU",
       "accent": "#4f8f60",
       "icon": "icons/apps/smart-dog.png",
+      "kind": "web",
       "url": "/smart-dog/",
       "repo": "https://github.com/vladcherry/smart-dog",
       "pwa": true
@@ -68,6 +103,7 @@
       "lang": "UK",
       "accent": "#e0a33e",
       "icon": "icons/apps/espanol-a1-juego.png",
+      "kind": "web",
       "url": "/espanol-a1-juego/",
       "repo": "https://github.com/vladcherry/espanol-a1-juego",
       "pwa": true
@@ -80,6 +116,7 @@
       "lang": "EN",
       "accent": "#d98b2b",
       "icon": "icons/apps/imotbg.svg",
+      "kind": "web",
       "url": "/imotbg/",
       "repo": "https://github.com/vladcherry/imotbg",
       "pwa": false
@@ -92,6 +129,7 @@
       "lang": "ES",
       "accent": "#6b7f96",
       "icon": "icons/apps/repasa.svg",
+      "kind": "web",
       "url": "/repasa/",
       "repo": "https://github.com/vladcherry/repasa",
       "pwa": false
