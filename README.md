@@ -14,7 +14,7 @@ Everything on the page is generated from [`apps.json`](apps.json). A web app:
   "name": "My App",
   "tagline": "One sentence on what it does.",
   "category": "Tools",
-  "lang": "EN",
+  "langs": ["EN", "ES"],
   "accent": "#5c7cfa",
   "icon": "icons/apps/my-app.png",
   "kind": "web",
@@ -33,7 +33,7 @@ is the page the card itself links to:
   "name": "My Tool",
   "tagline": "One sentence on what it does.",
   "category": "Tools",
-  "lang": "EN",
+  "langs": ["EN"],
   "accent": "#5763ef",
   "icon": "icons/apps/my-tool.png",
   "kind": "desktop",
@@ -58,6 +58,13 @@ Then:
 `category` values drive the filter chips automatically — a new one just appears.
 `pwa: false` marks a web app that has no manifest, so it shows a plain **Web** badge
 instead of **Installable**.
+
+`langs` lists every language the app's own interface offers, as one badge. **The
+first code is the language the app opens in** — take it from that app's
+`<html lang>`, which is what its author set as the default. Ukrainian is written
+`UA` rather than the ISO `UK`, because `UK` next to `EN` reads as the United
+Kingdom; `VA` is Valencian. Adding a language to an app means editing this list
+too — nothing here is read from the apps at runtime.
 
 Clicking a desktop card goes to its release page, never straight to the binary —
 only the explicit **Download** button fetches the file. Keep it that way; a stray

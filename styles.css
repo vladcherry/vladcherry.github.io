@@ -362,6 +362,14 @@ a { color: inherit; }
 
 .tag--lang { letter-spacing: .05em; }
 
+/* Separator between language codes; it is aria-hidden, so a screen reader
+   reads the codes themselves without a "middle dot" between each one. */
+.tag--lang i {
+  font-style: normal;
+  opacity: .45;
+  margin: 0 1px;
+}
+
 .tag--ver {
   font-variant-numeric: tabular-nums;
   color: var(--text-faint);

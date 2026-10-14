@@ -34,6 +34,19 @@
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) =>
     ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
+  const LANG_NAMES = {
+    EN: 'English', RU: 'Русский', UA: 'Українська', ES: 'Español', VA: 'Valencià',
+  };
+
+  // One tag per card, however many languages: four separate pills crowd it out.
+  // The first code is the language the app opens in.
+  function langTag(app) {
+    const codes = app.langs;
+    const title = codes.map((c) => LANG_NAMES[c] || c).join(', ');
+    const sep = '<i aria-hidden="true">·</i>';
+    return `<span class="tag tag--lang" title="${esc(title)}">${codes.map(esc).join(sep)}</span>`;
+  }
+
   function badges(app) {
     if (app.kind === 'desktop') {
       return desktopBadge(app) +
@@ -60,7 +73,7 @@
           <h2 class="card__name"><a href="${esc(cardHref)}"${external}>${esc(app.name)}</a></h2>
           <div class="card__meta">
             <span class="tag tag--cat">${esc(app.category)}</span>
-            <span class="tag tag--lang">${esc(app.lang)}</span>
+            ${langTag(app)}
             ${badges(app)}
           </div>
         </div>
@@ -77,7 +90,8 @@
     if (category !== 'All' && app.category !== category) return false;
     const q = search.value.trim().toLowerCase();
     if (!q) return true;
-    return [app.name, app.tagline, app.category, app.lang, app.slug, app.platform, app.kind]
+    const langs = app.langs.concat(app.langs.map((c) => LANG_NAMES[c] || c));
+    return [app.name, app.tagline, app.category, app.slug, app.platform, app.kind, ...langs]
       .filter(Boolean).join(' ').toLowerCase().includes(q);
   }
 

@@ -5,7 +5,12 @@
       "name": "Bus Radar",
       "tagline": "Live Avanza buses around Altea, Albir and Benidorm — where each one is now and when it reaches your stop.",
       "category": "Transport",
-      "lang": "EN",
+      "langs": [
+        "EN",
+        "ES",
+        "VA",
+        "UA"
+      ],
       "accent": "#e05252",
       "icon": "icons/apps/bus-radar.png",
       "kind": "web",
@@ -18,7 +23,12 @@
       "name": "Barogram",
       "tagline": "Weather read as intensity scales: wind, temperature, UV, humidity, waves and pressure at a glance.",
       "category": "Weather",
-      "lang": "EN",
+      "langs": [
+        "EN",
+        "RU",
+        "UA",
+        "ES"
+      ],
       "accent": "#5c7cfa",
       "icon": "icons/apps/barogram.png",
       "kind": "web",
@@ -31,7 +41,10 @@
       "name": "FitBalance",
       "tagline": "Calorie balance for the day: what went in, what you burned, and how much is left.",
       "category": "Health",
-      "lang": "EN",
+      "langs": [
+        "RU",
+        "EN"
+      ],
       "accent": "#e0484d",
       "icon": "icons/apps/fit-balance.png",
       "kind": "web",
@@ -44,7 +57,9 @@
       "name": "mdzy",
       "tagline": "A Markdown and text viewer for Windows: one 234 KB exe, no dependencies, documents open in under 100 ms.",
       "category": "Tools",
-      "lang": "EN",
+      "langs": [
+        "EN"
+      ],
       "accent": "#5763ef",
       "icon": "icons/apps/mdzy.png",
       "kind": "desktop",
@@ -61,7 +76,12 @@
       "name": "Beer iSpindel",
       "tagline": "Gravity, temperature and battery from an iSpindel hydrometer while the beer ferments, charted live.",
       "category": "Brewing",
-      "lang": "RU",
+      "langs": [
+        "EN",
+        "RU",
+        "UA",
+        "ES"
+      ],
       "accent": "#c8851a",
       "icon": "icons/apps/beer-ispindel.png",
       "kind": "web",
@@ -74,7 +94,12 @@
       "name": "IRPF",
       "tagline": "Spanish income tax across every income at once: effective and marginal rates, and the stretches where a raise barely arrives.",
       "category": "Finance",
-      "lang": "EN",
+      "langs": [
+        "EN",
+        "ES",
+        "RU",
+        "UA"
+      ],
       "accent": "#3f9e77",
       "icon": "icons/apps/cesta.png",
       "kind": "web",
@@ -87,7 +112,9 @@
       "name": "Smart Dog",
       "tagline": "Walking, feeding and training plan for a puppy, computed automatically from height and weight.",
       "category": "Pets",
-      "lang": "RU",
+      "langs": [
+        "RU"
+      ],
       "accent": "#4f8f60",
       "icon": "icons/apps/smart-dog.png",
       "kind": "web",
@@ -100,7 +127,9 @@
       "name": "Azulejo",
       "tagline": "Spanish from zero: greetings, colours, counting and core phrases, with a timer and saved progress.",
       "category": "Learning",
-      "lang": "UK",
+      "langs": [
+        "UA"
+      ],
       "accent": "#e0a33e",
       "icon": "icons/apps/espanol-a1-juego.png",
       "kind": "web",
@@ -113,7 +142,9 @@
       "name": "Imoti",
       "tagline": "Flats and houses for sale in Sofia, Plovdiv, Varna and Burgas, on a map of price per square metre.",
       "category": "Property",
-      "lang": "EN",
+      "langs": [
+        "EN"
+      ],
       "accent": "#d98b2b",
       "icon": "icons/apps/imotbg.svg",
       "kind": "web",
@@ -126,7 +157,9 @@
       "name": "Repasa",
       "tagline": "Flat management demo: units, tenants and what needs doing next.",
       "category": "Property",
-      "lang": "ES",
+      "langs": [
+        "ES"
+      ],
       "accent": "#6b7f96",
       "icon": "icons/apps/repasa.svg",
       "kind": "web",
